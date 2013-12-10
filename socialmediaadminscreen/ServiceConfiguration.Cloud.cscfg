@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="socialmediaadminscreen" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="socialmedia">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=socialmediametadata;AccountKey=8zZb33aRi2lPDEpOQken5SVfGVPM1igMFmYXrpbjvFEupBbGpcv7LOXNWjlz1pO3pBoMEVyO8RTXZoM+4qi0CQ==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="batchprocess">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=socialmediametadata;AccountKey=8zZb33aRi2lPDEpOQken5SVfGVPM1igMFmYXrpbjvFEupBbGpcv7LOXNWjlz1pO3pBoMEVyO8RTXZoM+4qi0CQ==" />
+      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=socialmediametadata;AccountKey=8zZb33aRi2lPDEpOQken5SVfGVPM1igMFmYXrpbjvFEupBbGpcv7LOXNWjlz1pO3pBoMEVyO8RTXZoM+4qi0CQ==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="twitterbatchprocess">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=socialmediametadata;AccountKey=8zZb33aRi2lPDEpOQken5SVfGVPM1igMFmYXrpbjvFEupBbGpcv7LOXNWjlz1pO3pBoMEVyO8RTXZoM+4qi0CQ==" />
+      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=socialmediametadata;AccountKey=8zZb33aRi2lPDEpOQken5SVfGVPM1igMFmYXrpbjvFEupBbGpcv7LOXNWjlz1pO3pBoMEVyO8RTXZoM+4qi0CQ==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
