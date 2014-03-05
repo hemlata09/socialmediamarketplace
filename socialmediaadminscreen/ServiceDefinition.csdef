@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceDefinition name="socialmediaadminscreen" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-03.2.0">
+<ServiceDefinition name="socialmediaadminscreen" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
   <WebRole name="socialmedia" vmsize="Small">
     <Sites>
       <Site name="Web">
@@ -22,7 +22,6 @@
   </WebRole>
   <WorkerRole name="batchprocess" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="StorageConnectionString" />
@@ -30,7 +29,6 @@
   </WorkerRole>
   <WorkerRole name="twitterbatchprocess" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="StorageConnectionString" />
